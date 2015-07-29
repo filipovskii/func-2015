@@ -1,15 +1,22 @@
 <!doctype html>
 <html>
   <head>
+    <link href='http://fonts.googleapis.com/css?family=PT+Mono'
+    rel='stylesheet' type='text/css'>
     <style>
       html, body, .content {
         height: 100%;
       }
 
       body {
+        font-family: 'PT Mono', monospace;
         background-color: #0000fe;
         color: #fffdfe;
-        font-size: 16px;
+        font-size: 25px;
+      }
+
+      body pre {
+        font-family: 'PT Mono', monospace;
       }
 
       .logo {
@@ -22,8 +29,17 @@
         margin: 120px auto 0 auto;
       }
 
+
+      ._light-txt {
+        color: rgb(175,205,255);
+      }
+
+      ._number {
+        color: rgb(255,85,120);
+      }
+
       a, a:visited, a:hover {
-        color: #fffdfe;
+        text-decoration: underline;
       }
     </style>
   </head>
@@ -31,13 +47,14 @@
     <div class="content">
       <img src='./x.jpg' alt='Frontend Union Conf' class="logo" />
       <pre>
-frontendUnionConf = {
-  year:   2015,
-  month:  'Aug',
-  place:  'MailRu Group HQ'
+<span class="_light-txt">frontendUnionConf</span> = {
+  <span class="_light-txt">year:</span>   <span class="_number">2015</span>,
+  <span class="_light-txt">month:</span>  'Aug',
+  <span class="_light-txt">day:</span>    <span class="_number">29</span>,
+  <span class="_light-txt">place:</span>  'MailRu Group HQ'
 }
 
-shareWithFriends(<a href="https://www.facebook.com/frontendunion">facebook</a>, <a href="https://twitter.com/frontend_union">twitter</a>)
+shareWithFriends(<a class="_light-txt" href="https://www.facebook.com/frontendunion">facebook</a>, <a class="_light-txt" href="https://twitter.com/frontend_union">twitter</a>)
       </pre>
     </div>
   </body>
